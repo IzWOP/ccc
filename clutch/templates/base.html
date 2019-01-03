@@ -30,18 +30,18 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
+            <li class="nav-item {{ home_page }}">
               <a class="nav-link" href="{% url 'index' %}">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
+            <li class="nav-item {{ gallery_page }}">
+              <a class="nav-link {% if active_tab == 'tab1' %} active{% endif %}" href="{% url 'gallery' %}">Gallery</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Services</a>
+            <li class="nav-item {{ about_page }}">
+              <a class="nav-link" href="{% url 'about' %}">About</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item {{ contact_page }}">
               <a class="nav-link" href="{% url 'email' %}">Contact</a>
             </li>
           </ul>
@@ -55,8 +55,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-dark">
       <div class="container">
-        <p class="m-0 text-center text-white">Copyright &copy; Clutch City Coatings {% now "Y" %}</p>
-	      <br />
+        <p class="m-0 text-center text-white">&copy; Clutch City Coatings {% now "Y" %}</p>
 	      <p> Created by: <a href="irunpy.net"> Isaac Vazquez {% now "Y" %}</a></p>
       </div>
       <!-- /.container -->

@@ -3924,4 +3924,13 @@
   Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
+$( 'a a' ).remove();
+
+document.documentElement.setAttribute("lang", "en");
+document.documentElement.removeAttribute("class");
+
+axe.run( function(err, results) {
+  console.log( results.violations );
+} );
 //# sourceMappingURL=bootstrap.js.map

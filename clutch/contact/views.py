@@ -17,7 +17,7 @@ def emailView(request):
             except BadHeaderError:
                 return HttpResponse('Invalid header found.')
             return redirect('success')
-    return render(request, "contact/email.html", {'form': form})
+    return render(request, "contact/email.html", {'form': form, 'contact_page':'active'})
 
 def successView(request):
     return HttpResponse('Success! Thank you for your message.')
