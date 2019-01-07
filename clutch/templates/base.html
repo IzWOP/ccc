@@ -22,27 +22,27 @@
 
 <body>
     <!-- Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="#">CCC</a>
+        <a class="navbar-brand" href="{% url 'index' %}">CCC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item {{ home_page }}">
-              <a class="nav-link" href="{% url 'index' %}">Home
+              <a class="nav-link text-dark" href="{% url 'index' %}">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item {{ gallery_page }}">
-              <a class="nav-link {% if active_tab == 'tab1' %} active{% endif %}" href="{% url 'gallery' %}">Gallery</a>
+            <li class="nav-item text-dark{{ gallery_page }}">
+              <a class="nav-link text-dark" href="{% url 'gallery' %}">Gallery</a>
             </li>
-            <li class="nav-item {{ about_page }}">
-              <a class="nav-link" href="{% url 'about' %}">About</a>
+            <li class="nav-item text-dark {{ about_page }}">
+              <a class="nav-link text-dark" href="{% url 'about' %}">About</a>
             </li>
-            <li class="nav-item {{ contact_page }}">
-              <a class="nav-link" href="{% url 'email' %}">Contact</a>
+            <li class="nav-item text-dark {{ contact_page }}">
+              <a class="nav-link text-dark" href="{% url 'email' %}">Contact</a>
             </li>
           </ul>
         </div>
@@ -53,10 +53,9 @@
 
 
     <!-- Footer -->
-    <footer class="py-5 bg-dark">
+    <footer class="py-5 bg-transparent">
       <div class="container">
-        <p class="m-0 text-center text-white">&copy; Clutch City Coatings {% now "Y" %}</p>
-	      <p> Created by: <a href="irunpy.net"> Isaac Vazquez {% now "Y" %}</a></p>
+        <p class="m-0 text-center text-dark">&copy; Clutch City Coatings {% now "Y" %}</p><p class="text-dark text-muted text-center"> Created by: <a href="irunpy.net"> Isaac Vazquez {% now "Y" %}</a></p>
       </div>
       <!-- /.container -->
     </footer>
