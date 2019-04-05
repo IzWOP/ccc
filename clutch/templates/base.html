@@ -31,18 +31,18 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item {{ home_page }}">
-              <a class="nav-link text-dark" href="{% url 'index' %}">Home
+              <a class="nav-link text-white" href="{% url 'index' %}">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item text-dark {{ gallery_page }}">
-              <a class="nav-link text-dark" href="{% url 'gallery' %}">Gallery</a>
+            <li class="nav-item text-white" {{ gallery_page }}">
+              <a class="nav-link text-white" href="{% url 'gallery' %}">Gallery</a>
             </li>
-            <li class="nav-item text-dark {{ about_page }}">
-              <a class="nav-link text-dark" href="{% url 'about' %}">About</a>
+            <li class="nav-item text-white" {{ about_page }}">
+              <a class="nav-link text-white" href="{% url 'about' %}">About</a>
             </li>
-            <li class="nav-item text-dark {{ contact_page }}">
-              <a class="nav-link text-dark" href="{% url 'email' %}">Contact</a>
+            <li class="nav-item text-white {{ contact_page }}">
+              <a class="nav-link text-white" href="{% url 'email' %}">Contact</a>
             </li>
           </ul>
         </div>
@@ -55,7 +55,7 @@
     <!-- Footer -->
     <footer class="py-5 bg-transparent">
       <div class="container">
-        <p class="m-0 text-center text-dark">&copy; Clutch City Coatings {% now "Y" %}</p><p class="text-dark text-muted text-center"> Created by: <a href="irunpy.net"> Isaac Vazquez {% now "Y" %}</a></p>
+        <p class="m-0 text-center text-dark">&copy; Clutch City Coatings {% now "Y" %}</p><p class="text-dark text-muted text-center"> Created by: <a href="https://irunpy.net/"> Isaac Vazquez {% now "Y" %}</a></p>
       </div>
       <!-- /.container -->
     </footer>
