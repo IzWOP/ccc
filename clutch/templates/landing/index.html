@@ -2,52 +2,43 @@
 {% load static %}
 {% load staticfiles %}
 {% block content %}
-    <header>
-      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-        <ol class="carousel-indicators">
-          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner" role="listbox">
-          <!-- Slide One - Set the background image for this slide in the line below -->
-          <div class="carousel-item active">
-            <img src="{% static '/img/img1.jpeg' %}" id="img1"/>
-          </div>
-          <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item img2">
-            <img src="{% static '/img/img3.jpeg' %}" id="img2" />
-            <div class="carousel-caption d-none d-md-block">
+<header class="hero">
+<div class="hero__index">
+</div>
+</header>
 
-            </div>
-          </div>
-          <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item img3">
-            <img src="{% static '/img/img11.jpeg' %}" id="img3" />
-            <div class="carousel-caption d-none d-md-block">
-              <!--<h3>Third Slide</h3>-->
-              <!--<p>This is a description for the third slide.</p>-->
-            </div>
-          </div>
-        </div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
-    </header>
 
     <!-- Page Content -->
-    <section class="py-5">
-      <div class="container">
-        <h1>Who we are</h1>
-        <p> </p>
-      </div>
-    </section>
+<div class="container index__carousel">
+	<div id="" class="carousel slide" data-ride="carousel">
+	  <div class="carousel-inner">
+	    <div class="carousel-item active">
+	      <img class="d-block w-100" src="{% static "/img/img4.jpeg" %}" alt="First slide" >
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="{% static "/img/img16.jpeg" %}" alt="Second slide">
+	    </div>
+	    <div class="carousel-item">
+	      <img class="d-block w-100" src="{% static "/img/img8.jpeg" %}" alt="Third slide">
+	    </div>
+	  </div>
+	</div>
+</div>
+<section class="about__section">
+  <div class="about__header">
+    <h1>Who we are</h1>
+  </div>
+<div class="about__paragraph">
+	<p>
+
+	</p>
+</div>
+{#<div class="about__images row">#}
+{#	<img src="{% static "/img/img1.jpeg" %}" alt="" class="about__images-1">#}
+{#	<img src="{% static "/img/img16.jpeg" %}" alt="" class="about__images-2">#}
+{#</div>#}
+
+</section>
 
 
 {% endblock content %}

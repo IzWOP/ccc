@@ -9,40 +9,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="">
     <meta name="author" content="">
-
+{#	  bootstrap content#}
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <title>Clutch City Coatings</title>
 
-    <!-- Bootstrap core CSS -->
-    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
 
     <!-- Custom styles for this template -->
-    <link href="{% static 'css/half-slider.css' %}" rel="stylesheet">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
 
   </head>
 
-<body bgcolor="black">
+<body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-transparent fixed-top">
       <div class="container">
-        <a class="navbar-brand" href="{% url 'index' %}">CCC</a>
+        <a class="navbar-brand text-dark" href="{% url 'index' %}">CCC</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item {{ home_page }}">
-              <a class="nav-link text-white" href="{% url 'index' %}">Home
+              <a class="nav-link text-dark" href="{% url 'index' %}">Home
                 <span class="sr-only">(current)</span>
               </a>
             </li>
-            <li class="nav-item text-white" {{ gallery_page }}">
-              <a class="nav-link text-white" href="{% url 'gallery' %}">Gallery</a>
+            <li class="nav-item text-dark {{ gallery_page }}">
+              <a class="nav-link text-dark" href="{% url 'gallery' %}">Gallery</a>
             </li>
-            <li class="nav-item text-white" {{ about_page }}">
-              <a class="nav-link text-white" href="{% url 'about' %}">About</a>
+            <li class="nav-item text-dark {{ about_page }}">
+              <a class="nav-link text-dark" href="{% url 'about' %}">About</a>
             </li>
-            <li class="nav-item text-white {{ contact_page }}">
-              <a class="nav-link text-white" href="{% url 'email' %}">Contact</a>
+            <li class="nav-item text-dark {{ contact_page }}">
+              <a class="nav-link text-dark" href="{% url 'email' %}">Contact</a>
             </li>
           </ul>
         </div>
@@ -60,9 +60,8 @@
       <!-- /.container -->
     </footer>
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
-    <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
-
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
 </body>
