@@ -1,27 +1,29 @@
 .hero__index {
-  position:top;
-  height: 95vh;
-  background-image: url("../img/ccc.jpg");
-  background-size: cover;
-  background-position: center;
+    position:top;
+    height: 95vh;
+    background-image: url("../img/ccc.jpg");
+    background-size: cover;
+    background-position: center;
     margin-bottom: 10rem;
 }
 
 .about__section {
-
     display: grid;
     grid-template-columns: 50vw 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "about carousel";
 }
+
 .about__textarea {
     grid-area: about;
     place-self: center;
 }
+
 .about__header {
     text-align: center;
 }
+
 .about__paragraph {
     text-align: left;
     text-indent: 20px;
@@ -45,7 +47,6 @@
     box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
     margin-bottom: 5rem;
 }
-
 
 .gallery__grid {
     display: grid;
