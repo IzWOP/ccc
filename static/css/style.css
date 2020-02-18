@@ -1,0 +1,20 @@
+.hero__index {
+  position:top;
+  height: 95vh;
+  background-image: url("../img/ccc.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+
+.index__carousel {
+    width: 55%;
+
+}
+
+.carousel {
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, .4);
+}
